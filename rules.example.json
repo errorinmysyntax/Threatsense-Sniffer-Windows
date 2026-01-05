@@ -1,0 +1,19 @@
+{
+  "port_scan": {
+    "unique_ports_threshold": 30,
+    "window_seconds": 15
+  },
+  "syn_flood": {
+    "syn_threshold": 200,
+    "window_seconds": 10
+  },
+  "dns_tunnel": {
+    "max_domain_length": 70,
+    "max_label_length": 24,
+    "max_labels": 5,
+    "suspicious_entropy_threshold": 0.9
+  },
+  "suspicious_ports": {
+    "ports": [4444, 1337, 6667, 9001, 8081, 5555]
+  }
+}

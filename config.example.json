@@ -1,0 +1,64 @@
+{
+  "interface": "auto",
+  "bpf_filter": "ip",
+  "log_path": "alerts.jsonl",
+  "alert_console": true,
+  "alert_output": "file",
+  "alert_file": true,
+  "log_dir": "",
+  "rules_path": "",
+  "webhook": {
+    "enabled": false,
+    "url": "",
+    "timeout_seconds": 5
+  },
+  "cooldown_seconds": 30,
+  "log_rotation": {
+    "enabled": true,
+    "max_bytes": 1048576,
+    "max_backups": 5
+  },
+  "stats": {
+    "enabled": true,
+    "interval_seconds": 30
+  },
+  "allowlist": {
+    "ips": [],
+    "domains": [],
+    "ports": []
+  },
+  "denylist": {
+    "ips": [],
+    "domains": [],
+    "ports": []
+  },
+  "pcap": {
+    "enabled": true,
+    "path": "alerts.pcap"
+  },
+  "local_ips": [],
+  "port_scan": {
+    "enabled": true,
+    "window_seconds": 10,
+    "unique_ports_threshold": 20
+  },
+  "syn_flood": {
+    "enabled": true,
+    "window_seconds": 5,
+    "syn_threshold": 100
+  },
+  "dns_tunnel": {
+    "enabled": true,
+    "max_domain_length": 60,
+    "max_label_length": 20,
+    "max_labels": 4,
+    "suspicious_entropy_threshold": 0.85
+  },
+  "suspicious_ports": {
+    "enabled": true,
+    "ports": [4444, 1337, 6667, 9001, 8081]
+  },
+  "basic_auth_leak": {
+    "enabled": true
+  }
+}

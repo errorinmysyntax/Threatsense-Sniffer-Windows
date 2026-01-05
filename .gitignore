@@ -1,0 +1,5 @@
+.venv/
+alerts.jsonl
+alerts.pcap
+config.json
+__pycache__/
